@@ -1,0 +1,55 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace views "views.*";
+@namespace components "components.*";
+
+s|ViewNavigatorApplication{
+	skinClass: ClassReference("skins.AppSkin"); 
+}
+
+s|View{
+	backgroundAlpha: 0;
+}
+
+views|Home{
+	skinClass:ClassReference("skins.ViewSkin");
+}	
+
+#location{
+	skinClass:ClassReference("skins.LocationLabelSkin");
+	fontFamily: "Spoleto";
+	color: #FFFFFF;
+	fontSize: 60px;
+}
+
+#filterBtn{
+	skinClass: ClassReference("skins.FilterButtonSkin"); 
+	fontFamily: "Lions Den";
+}
+
+#itemList{
+	contentBackgroundAlpha: 0;
+}
+
+.item{
+	fontFamily: "Lions Den";
+	font-size: 30px;
+}
+
+.place{
+	fontFamily: "Trade Gothic LT Std";
+	fontWeight: bold;
+	font-size: 15px;
+}
+
+components|DetailBanner{
+	skinClass: ClassReference("skins.DetailBannerSkin");
+	fontFamily: "Lions Den";
+	textAlign: "center";
+}
+
+#comments{
+	skinClass: ClassReference("skins.NoteSkin");
+	fontFamily: "Lions Den";
+	
+}
